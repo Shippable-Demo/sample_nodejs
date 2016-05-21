@@ -16,7 +16,7 @@ integrations:
     - integrationName: Shippable-Slack
       type: slack
       recipients:
-        - "#shippable-tutorials"
+        - "#tutorials"
       branches:
         only:
           - master
