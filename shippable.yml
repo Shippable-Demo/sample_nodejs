@@ -1,4 +1,4 @@
-language: node_jsads
+language: node_jsadss
 
 node_js:
   - 0.12
