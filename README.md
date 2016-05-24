@@ -1,6 +1,8 @@
 # nodejs
 This repository contains the files necessary to run a sample application in Node.js and to run CI tests on Shippable.
 
+coverageBadge:
+ https://api.shippable.com/projects/573ffd2b2a8192902e20eabe/coverageBadge?branch=master
 
 Contents:
 This repository has 6 files and the functions of each file are as follows:
@@ -11,5 +13,5 @@ This repository has 6 files and the functions of each file are as follows:
 4. index.js - Outputs "Welcome to Shippable" in a browser
 5. test.js - Configured to run a simple unit test to check the syntax of the index.js output
 6. Gruntfile.js - grunt file that loads express server and mocha Test
-7. xunit.xml - 
+7. xunit.xml -
 8. .gitignore - default file created at the time of creating this repository
