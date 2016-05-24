@@ -1,8 +1,6 @@
 # nodejs
 This repository contains the files necessary to run a sample application in Node.js and to run CI tests on Shippable.
 
-coverageBadge:
- https://api.shippable.com/projects/573ffd2b2a8192902e20eabe/coverageBadge?branch=master
 
 Contents:
 This repository has 6 files and the functions of each file are as follows:
