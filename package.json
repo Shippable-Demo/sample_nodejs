@@ -1,7 +1,7 @@
 {
-  "name": "sample-node-couchdb",
+  "name": "sample-nodejs",
   "version": "0.0.0",
-  "description": "Testing CouchDB service",
+  "description": "Nodejs app with a unit test",
   "main": "index.js",
   "scripts": {
     "test": "grunt"
