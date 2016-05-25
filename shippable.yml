@@ -4,7 +4,7 @@ node_js:
   - "0.10"
 
 matrix:
-  include:
+  exclude:
     - 0.12
     - 4.2.3
 
