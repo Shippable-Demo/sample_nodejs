@@ -7,6 +7,8 @@ node_js:
 
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
+  matrix:
+    IMAGE=A, IMAGE=B, IMAGE=C
 
 build:
   ci:
