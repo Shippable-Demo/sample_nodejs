@@ -6,7 +6,8 @@ node_js:
   - "0.10"
 
 env:
-  - XUNIT_FILE=shippable/testresults/result.xml
+  global:
+    - XUNIT_FILE=shippable/testresults/result.xml
   matrix:
     IMAGE=A, IMAGE=B, IMAGE=C
 
