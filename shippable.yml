@@ -8,9 +8,7 @@ matrix:
   include:
     - "0.10"
     - 0.12
-  exclude:
-    - 4.2.3
-
+  
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
