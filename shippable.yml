@@ -5,8 +5,8 @@ matrix:
   include:
     - "0.10"
   exclude:
-    - 0.12
-    - 4.2.3
+    - rvm: 0.12
+    - rvm: 4.2.3
 
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
