@@ -4,6 +4,9 @@ node_js:
   - "0.10"
   - 0.12
   - 4.2.3
+matrix:
+  exclude:
+    - 4.2.3
 
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
