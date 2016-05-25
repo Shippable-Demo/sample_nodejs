@@ -2,14 +2,12 @@ language: node_js
 
 node_js:
   - 0.12
-  - 4.2.3
-  - "0.10"
 
 env:
   global:
     - XUNIT_FILE=shippable/testresults/result.xml
   matrix:
-    IMAGE=A, IMAGE=B, IMAGE=C
+    - IMAGE=A, IMAGE=B, IMAGE=C
 
 build:
   ci:
