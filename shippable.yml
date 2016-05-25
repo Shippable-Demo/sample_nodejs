@@ -1,12 +1,9 @@
 language: node_js
 
-
-matrix:
-  include:
-    - "0.10"
-  exclude:
-    - rvm: 0.12
-    - rvm: 4.2.3
+node_js:
+  - "0.10"
+  - 0.12
+  - 4.2.3
 
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
