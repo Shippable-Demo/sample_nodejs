@@ -5,6 +5,9 @@ node_js:
   - 0.12
   - 4.2.3
 matrix:
+  include:
+    - "0.10"
+    - 0.12
   exclude:
     - 4.2.3
 
