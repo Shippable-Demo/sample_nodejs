@@ -1,11 +1,12 @@
 language: node_js
 
 node_js:
-  
+
 matrix:
   include:
     - "0.12"
     - env: ISOLATED=FALSE
+  allow_failures:
 
 
 env:
