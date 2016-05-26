@@ -4,11 +4,8 @@ node_js:
   - 0.12
 
 env:
-  global:
-    - XUNIT_FILE=shippable/testresults/result.xml
-  matrix:
-    - ["IMAGE=A", "IMAGE=B", "IMAGE=C"]
-
+  - XUNIT_FILE=shippable/testresults/result.xml
+  
 build:
   ci:
     - npm install
