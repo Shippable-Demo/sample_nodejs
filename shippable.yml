@@ -7,6 +7,13 @@ env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
 build:
+  pre_ci:
+    - docker build -t abhijitkini/testimage:latest .
+  pre_ci_boot:
+    image_name: abhijitkini/testimage
+    image_tag: latest
+    pull: false
+    options: "-e HOME=/root"
   ci:
     - npm install
     - npm test
