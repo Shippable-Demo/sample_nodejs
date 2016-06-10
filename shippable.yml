@@ -24,3 +24,11 @@ build:
 #pushing to DockerHub
   push:
     docker push abhijitkini/testimage:latest
+
+integrations:
+  hub:
+    - integrationName: Docker-Integration
+      type: docker
+      branches:
+        only:
+          - master
