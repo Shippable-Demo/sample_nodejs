@@ -21,6 +21,6 @@ build:
   post_ci:
     - ./node_modules/.bin/istanbul cover grunt -- -u tdd
     - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
-
+#pushing to DockerHub
   push:
     docker push abhijitkini/testimage:latest
