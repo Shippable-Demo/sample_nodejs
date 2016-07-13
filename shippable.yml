@@ -34,7 +34,7 @@ integrations:
           - master
           
   notifications:
-    - integrationName: shippable-slack
+    - integrationName: slack-integration
       type: slack
       recipients:
         - "#tutorials"
