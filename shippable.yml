@@ -32,3 +32,14 @@ integrations:
       branches:
         only:
           - master
+          
+  notifications:
++   - integrationName: shippable-slack
++     type: slack
+      recipients: 
+        - "#tutorials"
++     branches:
++       only:
++         - master
++     on_start: always
++     on_success: always
