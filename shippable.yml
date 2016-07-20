@@ -41,5 +41,5 @@ integrations:
       branches:
         only:
           - master
-      on_success: always
-      on_failure: always
+      on_success: never
+      on_failure: never
