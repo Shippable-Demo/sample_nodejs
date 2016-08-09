@@ -32,7 +32,7 @@ integrations:
       branches:
         only:
           - master
-          
+
   notifications:
     - integrationName: slack-integration
       type: slack
@@ -41,5 +41,5 @@ integrations:
       branches:
         only:
           - master
-      on_success: never
-      on_failure: never
+      on_success: always
+      on_failure: always
