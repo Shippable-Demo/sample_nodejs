@@ -3,43 +3,20 @@ language: node_js
 node_js:
   - 0.12
 
-env:
-  - XUNIT_FILE=shippable/testresults/result.xml
-
 build:
-  pre_ci:
-    - docker build -t abhijitkini/testimage:latest .
   pre_ci_boot:
     image_name: abhijitkini/testimage
     image_tag: latest
-    pull: false
+    pull: true
+    env: FOO=bar
     options: "-e HOME=/root"
   ci:
     - npm install
-    - npm test
-
-  post_ci:
-    - ./node_modules/.bin/istanbul cover grunt -- -u tdd
-    - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
-#pushing to DockerHub 
-  push:
-    docker push abhijitkini/testimage:latest
 
 integrations:
   hub:
-    - integrationName: docker-hub-integration
+    - integrationName: docker-hub
       type: docker
       branches:
         only:
           - master
-
-  notifications:
-    - integrationName: slack-integration
-      type: slack
-      recipients:
-        - "#tutorials"
-      branches:
-        only:
-          - master
-      on_success: never
-      on_failure: never
