@@ -5,20 +5,12 @@ node_js:
 
 build:
   pre_ci:
-    - docker build -t abhijitkini/testimage:latest . 
+    - docker build -t myCustomImage:latest . 
   pre_ci_boot:
-    image_name: abhijitkini/testimage
+    image_name: myCustomImage
     image_tag: latest
     pull: false
     env: FOO=bar
     options: "-e HOME=/root"
   ci:
     - npm install
-
-integrations:
-  hub:
-    - integrationName: docker-hub
-      type: docker
-      branches:
-        only:
-          - master
