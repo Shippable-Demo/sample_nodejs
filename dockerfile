@@ -1,4 +1,4 @@
-FROM drydock/u14nod:tip
+FROM testimage2:latest
 
 RUN mkdir -p /tmp/logs
 ADD . /src
