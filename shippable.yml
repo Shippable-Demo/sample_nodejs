@@ -5,9 +5,9 @@ node_js:
 
 build:
   pre_ci:
-    - docker build -t testimage2:latest . 
+    - docker build -t myCustomImage:latest . 
   pre_ci_boot:
-    image_name: testimage2
+    image_name: myCustomImage
     image_tag: latest
     pull: false
     env: FOO=bar
