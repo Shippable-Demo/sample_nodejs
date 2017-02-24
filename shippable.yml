@@ -15,10 +15,4 @@ build:
   ci:
     - echo "CI is running"
 
-integrations:
-  hub:
-    - integrationName: docker-hub
-      type: docker
-      branches:
-        only:
-          - master
+
