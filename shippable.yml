@@ -5,9 +5,9 @@ node_js:
 
 build:
   pre_ci:
-    - docker build -t abhijitkini/testimage2:latest . 
+    - docker build -t testimage2:latest . 
   pre_ci_boot:
-    image_name: abhijitkini/testimage2
+    image_name: testimage2
     image_tag: latest
     pull: false
     env: FOO=bar
