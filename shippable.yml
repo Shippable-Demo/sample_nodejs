@@ -13,7 +13,7 @@ build:
     env: FOO=bar
     options: "-e HOME=/root"
   ci:
-    - npm install
+    - echo "CI is running"
 
 integrations:
   hub:
