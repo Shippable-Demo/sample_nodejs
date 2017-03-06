@@ -13,6 +13,7 @@ build:
   
   ci:
     - echo "CI is running"
+    - npm install
     
   post_ci:
     - docker build -t abhijitkini/testimage:$BRANCH.$BUILD_NUMBER .
