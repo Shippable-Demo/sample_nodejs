@@ -15,7 +15,7 @@ build:
     - echo "CI is running"
     - npm install
     
-post-ci:
+push:
   - docker push abhijitkini/testimage:$BRANCH.$BUILD_NUMBER
 
 integrations:
