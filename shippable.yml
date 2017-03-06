@@ -15,7 +15,7 @@ build:
     - echo "CI is running"
     
   post_ci:
-    - docker build -t abhijitkini/testimage:$BRANCH.$BUILD_NUMBER
+    - docker build -t abhijitkini/testimage:$BRANCH.$BUILD_NUMBER .
     - docker push abhijitkini/testimage:$BRANCH.$BUILD_NUMBER
 
 integrations:
