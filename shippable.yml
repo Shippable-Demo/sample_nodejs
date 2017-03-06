@@ -10,9 +10,11 @@ build:
     pull: true
     env: FOO=bar
     options: "-e HOME=/root"
+  
   ci:
     - echo "CI is running"
     - npm install
+    
   post-ci:
     - docker push abhijitkini/testimage:$BRANCH.$BUILD_NUMBER
 
