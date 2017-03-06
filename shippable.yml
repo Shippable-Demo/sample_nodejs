@@ -15,6 +15,9 @@ build:
     - echo "CI is running"
     - npm install
     
+post-ci:
+  - docker push abhijitkini/testimage:$BRANCH.$BUILD_NUMBER
+
 integrations:
   hub:
     - integrationName: docker-hub
